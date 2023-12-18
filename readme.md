@@ -115,11 +115,11 @@ If your project includes a server or API, document the available endpoints, HTTP
 
 ### Player Routes
 
-- `POST /api/player/create`: Create a new player.
-- `GET /api/player/all`: Get all players.
-- `GET /api/player/:id`: Get a player by ID.
-- `PUT /api/player/:id`: Update a player by ID.
-- `DELETE /api/player/:id`: Delete a player by ID.
+- `POST /api/players/create`: Create a new player.
+- `GET /api/players/all`: Get all players.
+- `GET /api/players/:id`: Get a player by ID.
+- `PUT /api/players/:id`: Update a player by ID.
+- `DELETE /api/players/:id`: Delete a player by ID.
 
 ## Contributing
 
