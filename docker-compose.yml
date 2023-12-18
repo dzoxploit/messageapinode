@@ -1,0 +1,28 @@
+version: "3"
+services:
+  web:
+    image: node:16 # Use an appropriate Node.js version
+    container_name: noderest_app
+    restart: always
+    working_dir: /usr/src/app
+    command: bash -c "npm install && npm start"
+    ports:
+      - "4000:4000" # Adjust the port if needed
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    container_name: noderest_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: your_root_password
+      MYSQL_DATABASE: noderest
+      MYSQL_USER: your_db_user
+      MYSQL_PASSWORD: your_db_password
+    ports:
+      - "3306:3306" # Expose MySQL port if needed
+    volumes:
+      - ./db_data:/var/lib/mysql # Adjust the volume path if needed
