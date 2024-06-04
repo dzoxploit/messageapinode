@@ -1,4 +1,4 @@
-# Noderest
+# Message Rest API Node (Noderest)
 
 A boilerplate node js project use Node js express js Mysql and Sequilize Orm.
 
@@ -113,13 +113,13 @@ If your project includes a server or API, document the available endpoints, HTTP
 
 - `PATCH /api/profile/update`: Update user profile.
 
-### Player Routes
+### Message Routes
 
-- `POST /api/players/create`: Create a new player.
-- `GET /api/players/all`: Get all players.
-- `GET /api/players/:id`: Get a player by ID.
-- `PUT /api/players/:id`: Update a player by ID.
-- `DELETE /api/players/:id`: Delete a player by ID.
+- `POST /api/messages/create`: Create a new message.
+- `GET /api/messages/all`: Get all message.
+- `GET /api/messages/:id`: Get a message by ID.
+- `PUT /api/messages/:id`: Update a message by ID.
+- `DELETE /api/messages/:id`: Delete a message by ID.
 
 ## Contributing
 

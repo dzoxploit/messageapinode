@@ -7,7 +7,7 @@
   },
   "item": [
     {
-      "name": "player",
+      "name": "message",
       "item": [
         {
           "name": "create",
@@ -25,14 +25,14 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"first_name\": \"PlayerFirstName\",\r\n    \"last_name\": \"PlayerLastName\",\r\n    \"address\": \"PlayerAddress\",\r\n    \"phone_number\": \"PlayerPhoneNumber\"\r\n  }"
+              "raw": "{\r\n    \"first_name\": \"MessageFirstName\",\r\n    \"last_name\": \"MessageLastName\",\r\n    \"message\": \"lorem ipsum\",\r\n   }"
             },
             "url": {
-              "raw": "http://localhost:4000/api/players/create",
+              "raw": "http://localhost:4000/api/messages/create",
               "protocol": "http",
               "host": ["localhost"],
               "port": "4000",
-              "path": ["api", "player", "create"]
+              "path": ["api", "messages", "create"]
             }
           },
           "response": []
@@ -48,17 +48,17 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:4000/api/players/all",
+              "raw": "http://localhost:4000/api/messages/all",
               "protocol": "http",
               "host": ["localhost"],
               "port": "4000",
-              "path": ["api", "player", "all"]
+              "path": ["api", "messages", "all"]
             }
           },
           "response": []
         },
         {
-          "name": "get Player By Id",
+          "name": "get Message By Id",
           "request": {
             "method": "GET",
             "header": [
@@ -68,11 +68,11 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:4000/api/players/PLAYER_ID",
+              "raw": "http://localhost:4000/api/messages/MESSAGE_ID",
               "protocol": "http",
               "host": ["localhost"],
               "port": "4000",
-              "path": ["api", "player", "PLAYER_ID"]
+              "path": ["api", "messages", "MESSAGE_ID"]
             }
           },
           "response": []
@@ -93,14 +93,14 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"first_name\": \"UpdatedFirstName\",\r\n    \"last_name\": \"UpdatedLastName\",\r\n    \"address\": \"UpdatedAddress\",\r\n    \"phone_number\": \"UpdatedPhoneNumber\"\r\n  }"
+              "raw": "{\r\n    \"first_name\": \"UpdatedFirstName\",\r\n    \"last_name\": \"UpdatedLastName\",\r\n    \"message\": \"UpdatedMessages\",\r\n   }"
             },
             "url": {
-              "raw": "http://localhost:4000/api/players/PLAYER_ID",
+              "raw": "http://localhost:4000/api/messages/MESSAGE_ID",
               "protocol": "http",
               "host": ["localhost"],
               "port": "4000",
-              "path": ["api", "player", "PLAYER_ID"]
+              "path": ["api", "messages", "MESSAGE_ID"]
             }
           },
           "response": []
@@ -116,11 +116,11 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:4000/api/players/PLAYER_ID",
+              "raw": "http://localhost:4000/api/messages/MESSAGE_ID",
               "protocol": "http",
               "host": ["localhost"],
               "port": "4000",
-              "path": ["api", "player", "PLAYER_ID"]
+              "path": ["api", "messages", "MESSAGE_ID"]
             }
           },
           "response": []
